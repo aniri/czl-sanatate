@@ -180,8 +180,7 @@ class SanatateSpider(scrapy.Spider):
 process = CrawlerProcess({
     'USER_AGENT': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
     'LOG_LEVEL' : 'WARNING',
-    'DOWNLOAD_DELAY' : 0.25,
-    'ROBOTSTXT_OBEY' : true
+    'DOWNLOAD_DELAY' : 0.5
 })
 process.crawl(SanatateSpider)
 process.start()
