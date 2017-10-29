@@ -178,7 +178,7 @@ class SanatateSpider(scrapy.Spider):
         return contact
 
 process = CrawlerProcess({
-    'USER_AGENT': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+    'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)',
     'LOG_LEVEL' : 'WARNING',
     'DOWNLOAD_DELAY' : 0.5
 })
