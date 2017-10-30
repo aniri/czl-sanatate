@@ -181,7 +181,8 @@ process = CrawlerProcess({
     'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)',
     'LOG_LEVEL' : 'WARNING',
     'DOWNLOAD_DELAY' : 2.0,
-    'ROBOTSTXT_OBEY' : True
+    'ROBOTSTXT_OBEY' : True,
+    'CONCURRENT_REQUESTS' : 2
 })
 process.crawl(SanatateSpider)
 process.start()
